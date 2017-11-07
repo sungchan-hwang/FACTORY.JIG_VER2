@@ -1,0 +1,25 @@
+{
+    "mp_server":{
+        "ip": "rainus.iptime.org",
+        "port": 9000
+    },
+    "ni":{
+        "ip": "192.168.0.2",
+        "port": 1000
+    },
+    "jig":{
+        "ip": "0.0.0.0",
+        "port": 5002
+    },
+	"rf":{
+		"R154":{"11":{"tag_power": 0, "loss": 0}, "18":{"tag_power": 0, "loss": 0}, "26":{"tag_power": 0, "loss": 0}},
+		"R213":{"11":{"tag_power": 0, "loss": 13}, "18":{"tag_power": -1, "loss": 10}, "26":{"tag_power": -2, "loss": 9}},
+		"R290":{"11":{"tag_power": 0, "loss": 18}, "18":{"tag_power": 0, "loss": 17}, "26":{"tag_power": -1, "loss": 21}},
+		"R290F":{"11":{"tag_power": 0, "loss": 18}, "18":{"tag_power": 0, "loss": 17}, "26":{"tag_power": -1, "loss": 21}},
+		"R420":{"11":{"tag_power": 0, "loss": 0}, "18":{"tag_power": 0, "loss": 0}, "26":{"tag_power": 0, "loss": 0}},
+		"R750":{"11":{"tag_power": 0, "loss": 0}, "18":{"tag_power": 0, "loss": 0}, "26":{"tag_power": 0, "loss": 0}}
+	},
+    "pcNumber": "jig-small-00",
+	"script": "script.json",
+	"mode": "normal"
+}

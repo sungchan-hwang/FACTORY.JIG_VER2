@@ -1,0 +1,44 @@
+{
+	"header": {
+        "title": "tag 2.90 inch freeze - color",
+        "version": "2.0.0",
+		"mcu": "efr32fg1vxxxf256",
+		"batchNumber": "ITS-2017W41",
+		"model": "R290F",
+		"tag_type": "D5"
+    },
+    "body": [
+		{
+            "seq": 1,
+			"enable": "yes",
+            "name": "download",
+            "data": {"file": "EFR32_DKE_290B05_P20_NFBL_V0010.bin"},
+            "timeout": 3,
+			"retry": 1
+        },
+		{
+            "seq": 2,
+			"enable": "yes",
+            "name": "write mac",
+            "data": {},
+            "timeout": 3,
+			"retry": 1
+        },
+		{
+            "seq": 3,
+			"enable": "yes",
+            "name": "nfc",
+            "data": {"nfc_data": "RAINUS_NFC_TEST"},
+            "timeout": 3,
+			"retry": 1
+        },
+		{
+            "seq": 4,
+			"enable": "yes",
+            "name": "rf",
+            "data": {"ch": [11, 18, 26], "threshold_power": -30, "threshold_evm": 15, "threshold_min_freq_err": -96000, "threshold_max_freq_err": 96000},
+            "timeout": 3,
+			"retry": 1
+        }
+    ]
+}

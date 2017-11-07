@@ -1,0 +1,91 @@
+http://192.168.220.101:5002/manual_test/
+
+Content-Type	application/json
+
+#########################################################################
+[19, 0, 0.5, "TEST OK :: LED ON"],
+[21, 0, 0.5, "TEST NG :: LED ON"],
+[12, 0, 0.5, "ETHERNET OK :: LED ON"],
+[16, 0, 0.5, "ETHERNET NG :: LED ON"],
+[18, 0, 0.5, "DOWNLOAD OK :: LED ON"],
+[22, 0, 0.5, "DOWNLOAD NG :: LED ON"],
+[24, 0, 0.5, "RF OK :: LED ON"],
+[26, 0, 0.5, "RF NG :: LED ON"],
+[32, 0, 0.5, "NFC OK :: LED ON"],
+[36, 0, 0.5, "NFC NG :: LED ON"],
+[38, 0, 0.5, "MAC OK :: LED ON"],
+[40, 0, 0.5, "MAC NG :: LED ON"],
+
+[19, 1, 0.5, "TEST OK :: LED OFF"],
+[21, 1, 0.5, "TEST NG :: LED OFF"],
+[12, 1, 0.5, "ETHERNET OK :: LED OFF"],
+[16, 1, 0.5, "ETHERNET NG :: LED OFF"],
+[18, 1, 0.5, "DOWNLOAD OK :: LED OFF"],
+[22, 1, 0.5, "DOWNLOAD NG :: LED OFF"],
+[24, 1, 0.5, "RF OK :: LED OFF"],
+[26, 1, 0.5, "RF NG :: LED OFF"],
+[32, 1, 0.5, "NFC OK :: LED OFF"],
+[36, 1, 0.5, "NFC NG :: LED OFF"],
+[38, 1, 0.5, "MAC OK :: LED OFF"],
+[40, 1, 0.5, "MAC NG :: LED OFF"]
+
+[35, 1, 2, "CYLINDER :: DOWN"],
+[35, 0, 2, "CYLINDER :: UP"]
+[33, 1, 2, "FU :: DOWN"]
+[33, 0, 2, "FU :: UP"]
+[37, 1, 0.05, "TAG POWER :: ON"]
+[37, 0, 0.05, "TAG POWER :: OFF"]
+[7, 1, 0.01, "TAG RESET :: ON"]
+[7, 0, 0.01, "TAG RESET :: OFF"]
+#########################################################################
+
+{
+  "name": "gpio",
+  "data": [[33, 1, 2, "FU :: DOWN"],[37, 1, 0.05, "TAG POWER :: ON"],[7, 1, 0.01, "TAG RESET :: ON"]]
+}
+
+
+{
+  "name": "status_sens",
+  "data": {}
+}
+
+{
+  "name": "button",
+  "data": {"g_chk_start": 1, "g_chk_reset": 0}
+}
+
+{
+  "name": "test_ready",
+  "data": {}
+}
+
+{
+  "name": "download",
+  "data": {"file": "dke_7p50c_coop_v4_rel.bin"}
+}
+
+{
+  "name": "get_mac",
+  "data": {}
+}
+
+{
+  "name": "write_mac",
+  "data": {"tag_type": "38", "abstractMac": "1000178", "tagMac": "78E980000178"}
+}
+
+{
+  "name": "test_nfc",
+  "data": {"nfc_data": "RAINUS_NFC_TEST"}
+}
+
+{
+  "name": "test_rf",
+  "data": {"ch": [11, 18, 26], "tag_power": 0, "loss": 22, "threshold_power": -30, "threshold_evm": 10, "threshold_min_freq_err": -96000, "threshold_max_freq_err": 96000}
+}
+
+{
+  "name": "test_finish",
+  "data": {}
+}
